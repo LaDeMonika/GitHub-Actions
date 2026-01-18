@@ -1,0 +1,10 @@
+name: My GH Actionnn xD
+
+on: push
+
+jobs:
+    this-is-name-for-first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Printing anything
+              run: echo "Hellooo!! What's uppp??"
