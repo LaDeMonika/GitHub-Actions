@@ -25,3 +25,28 @@ It runs workflows:
 All workflows live here: `.github/workflows/`
 
 ---
+
+# Syntax
+
+
+### Minimal workflow
+
+#### Example:
+- **name** → workflow name (for UI)
+- **on: push** → run when someone pushes
+- **jobs** → list of jobs
+- **runs-on** → Linux machine
+- **run** → terminal command
+
+```yml
+name: Hello Action
+
+on: push
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Hello from GitHub Actions"
+```
